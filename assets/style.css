@@ -119,3 +119,13 @@ select { font: inherit; padding: 8px 10px; border-radius: 10px; border: 1px soli
   .go { display: none; }
   .nav-row .btn { padding: 10px 12px; }
 }
+
+/* ===== Himoya ===== */
+body.protected { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent; }
+body.protected img { pointer-events: none; }
+body.shielded > header, body.shielded > main { filter: blur(24px); visibility: hidden; }
+#guard { position: fixed; inset: 0; z-index: 9999; background: var(--bg); display: none; align-items: center; justify-content: center; padding: 24px; }
+.guard-box { max-width: 420px; text-align: center; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 24px; }
+.guard-icon { font-size: 40px; }
+.guard-box p { margin: 10px 0 18px; }
+@media print { body * { display: none !important; } body::after { content: "Chop etish taqiqlangan"; } }
