@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-row">
+    <a href="index.html" class="back">← Dashboard</a>
+    <h1 id="title">Test</h1>
+    <div id="timer" class="timer hidden"></div>
+  </div>
+</header>
+<main class="wrap">
+
+  <!-- Sozlamalar -->
+  <section id="setup" class="card setup">
+    <h2>Test sozlamalari</h2>
+    <p class="muted" id="setup-info"></p>
+    <label>Savollar soni
+      <select id="opt-count"></select>
+    </label>
+    <label>Vaqt chegarasi
+      <select id="opt-time">
+        <option value="0">Cheklanmagan</option>
+        <option value="15">15 daqiqa</option>
+        <option value="30">30 daqiqa</option>
+        <option value="45">45 daqiqa</option>
+        <option value="60">60 daqiqa</option>
+      </select>
+    </label>
+    <label class="check"><input type="checkbox" id="opt-shuffle-q" checked> Savollarni aralashtirish</label>
+    <label class="check"><input type="checkbox" id="opt-shuffle-o" checked> Javob variantlarini aralashtirish</label>
+    <button id="start" class="btn primary">Testni boshlash</button>
+  </section>
+
+  <!-- Test -->
+  <section id="quiz" class="hidden">
+    <div class="progress-row">
+      <span id="counter"></span>
+      <span><span class="dot ok"></span><b id="live-ok">0</b> to'g'ri &nbsp; <span class="dot bad"></span><b id="live-bad">0</b> xato</span>
+    </div>
+    <div class="bar"><div id="bar-fill"></div></div>
+    <article class="card question">
+      <h2 id="q-text"></h2>
+      <div id="options" class="options"></div>
+      <div id="feedback" class="feedback hidden"></div>
+    </article>
+    <div class="nav-row">
+      <button id="prev" class="btn">← Oldingi</button>
+      <button id="finish" class="btn danger">Yakunlash</button>
+      <button id="next" class="btn primary">Keyingi →</button>
+    </div>
+    <div id="palette" class="palette"></div>
+  </section>
+
+  <!-- Natija -->
+  <section id="result" class="hidden">
+    <div class="card result-card">
+      <div id="score-ring" class="ring"><span id="score-pct"></span></div>
+      <div>
+        <h2 id="score-title"></h2>
+        <div class="chips big">
+          <span class="chip ok">To'g'ri: <b id="r-ok"></b></span>
+          <span class="chip bad">Xato: <b id="r-bad"></b></span>
+          <span class="chip">Javobsiz: <b id="r-skip"></b></span>
+          <span class="chip">Vaqt: <b id="r-time"></b></span>
+        </div>
+        <div class="btns">
+          <button id="retry" class="btn primary">Qaytadan</button>
+          <button id="retry-wrong" class="btn">Faqat xatolarni ishlash</button>
+          <a href="index.html" class="btn">Dashboard</a>
+        </div>
+      </div>
+    </div>
+    <div class="filter-row">
+      <h2 class="section-title">Javoblar tahlili</h2>
+      <div class="tabs">
+        <button data-f="all" class="tab active">Hammasi</button>
+        <button data-f="bad" class="tab">Xatolar</button>
+        <button data-f="skip" class="tab">Javobsiz</button>
+      </div>
+    </div>
+    <div id="review"></div>
+  </section>
+</main>
+<script src="data/subjects.js"></script>
+<script src="assets/test.js"></script>
+</body>
+</html>
