@@ -129,3 +129,6 @@ body.shielded > header, body.shielded > main { filter: blur(24px); visibility: h
 .guard-icon { font-size: 40px; }
 .guard-box p { margin: 10px 0 18px; }
 @media print { body * { display: none !important; } body::after { content: "Chop etish taqiqlangan"; } }
+
+/* Ko'p qatorli savollar (moslashtirish, tartiblash) */
+#q-text, .rev-head b { white-space: pre-line; }

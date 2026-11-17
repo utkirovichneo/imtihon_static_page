@@ -10,11 +10,11 @@ window.SUBJECTS = [
     ready: true
   },
   {
-    id: "fan2",
-    name: "2-fan",
-    desc: "Tez orada qo'shiladi",
-    icon: "📘",
-    ready: false
+    id: "innovatsiya",
+    name: "Innovatsiya va integratsiya",
+    desc: "Boshlang‘ich ta’limda innovatsiya va integratsiya",
+    icon: "💡",
+    ready: true
   },
   {
     id: "fan3",
