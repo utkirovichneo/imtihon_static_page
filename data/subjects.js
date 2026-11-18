@@ -17,10 +17,10 @@ window.SUBJECTS = [
     ready: true
   },
   {
-    id: "fan3",
-    name: "3-fan",
-    desc: "Tez orada qo'shiladi",
-    icon: "📗",
-    ready: false
+    id: "qardosh",
+    name: "Qardosh xalqlar bolalar adabiyoti",
+    desc: "Bolalar folklori, jadid adiblari va o‘zbek bolalar adabiyoti",
+    icon: "📚",
+    ready: true
   }
 ];
